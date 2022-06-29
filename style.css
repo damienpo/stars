@@ -1,0 +1,158 @@
+*,html {box-sizing: border-box;}
+*, *::after, *::before {
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url("images/bg-pattern-top-desktop.svg"), url("images/bg-pattern-bottom-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: top left, right bottom; 
+    
+  
+    
+
+}
+
+
+.square{
+    display: flex;
+    flex-direction: column;
+    padding : 12rem 17rem;
+    gap: 5rem;
+    max-width: 201rem;
+}
+
+
+.header{
+    display: flex;
+    gap: 5rem;
+    
+}
+
+
+.topleft{
+    color: hsl(300, 43%, 22%);
+    flex-basis: content;
+    width: 20rem;  
+    
+}
+
+
+
+.title{
+    font-size: 50px;
+    font-weight: 700;
+    padding-bottom: 20px;
+    letter-spacing: -2px
+    
+}
+
+.text {
+    padding-top: 20px;
+    color :  hsl(303, 10%, 53%);
+    line-height: 1.5;
+}
+
+
+.rate{
+    background-color:  hsl(300, 24%, 96%);
+    border-radius: 5px;
+    margin: 20px 0px 20px 20px;
+    padding: 20px 20px 20px 40px;
+    color :  hsl(300, 43%, 22%);
+    font-weight: bold;
+    width: 25rem;
+}
+
+.rate::before{
+    content : "";
+    display: inline-block;
+    width: 90px;
+    height: 15px;
+    background: center center  url(images/icon-star.svg);
+    background-repeat: space ; 
+    vertical-align: middle;
+    margin-right: 25px;
+}
+
+.rate:nth-child(2) {
+    margin-left: 4.8rem;
+}
+
+.rate:nth-child(3) {
+    margin-left: 9.6rem;
+}
+
+.comment {
+    display: flex;
+    flex-direction: row;
+    gap : 1.5rem;
+    
+}
+
+.profil {
+    display: flex;
+    flex-direction: raw;
+    gap : 1.5rem;
+    align-content: center;
+}
+
+.profil-info {
+    display: flex;
+    flex-direction: column;    
+    gap: 0.4rem;
+
+}
+
+.profil-name{
+    font-size: 1.5em;
+    color: white;
+    font-weight: bold;
+}
+
+.profil-buyer { 
+    color: hsl(333, 80%, 67%)
+
+}
+.avis {
+    background-color: hsl(300, 43%, 22%) ;
+    padding: 2rem 1.5rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    height: 16rem;
+    
+}
+
+
+
+img {
+    border: solid 1px transparent;
+    border-radius: 50px;
+    width: 40px;
+    height: 40px;
+    margin-top: 5px;
+}
+
+.com {
+    color: white;
+    font-weight: 500;
+    line-height: 1.5 ;
+
+}
+
+.avis:nth-child(2) {
+    margin-top: 1.5rem;
+}
+
+.avis:nth-child(3) {
+    margin-top: 3rem;
+}
